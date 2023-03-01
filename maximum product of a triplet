@@ -1,0 +1,6 @@
+N=int(input())
+arr=[int(i) for i in input().split()]
+
+import heapq
+prod=heapq.nlargest(3,arr)
+print(prod[0]*prod[1]*prod[2])
